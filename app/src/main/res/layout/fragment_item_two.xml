@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bk4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="16dp"
+                android:background="@color/colorBar7"
+                android:layout_margin="24dp"
+                android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/colorBar7"
+
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/top"
+                        android:background="@color/colorBlueDARK"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:text="Consuming in Riyals"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="16dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginEnd="48dp"
+                        android:layout_marginBottom="48dp"
+                        android:layout_marginTop="64dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+
+                        >
+                        <FrameLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:animateProgress="true"
+                                app:backgroundStrokeColor="@color/colorGray"
+                                app:backgroundStrokeWidth="5dp"
+                                app:drawBackgroundStroke="false"
+                                app:foregroundStrokeCap="butt"
+                                app:foregroundStrokeColor="@color/colorBlueLight"
+                                app:foregroundStrokeWidth="12dp"
+                                app:indeterminate="false"
+                                app:indeterminateRotationAnimationDuration="1200"
+                                app:indeterminateSweepAnimationDuration="600"
+                                app:indeterminateMinimumAngle="45"
+                                app:maximum="100"
+                                app:progress="50"
+                                app:progressAnimationDuration="100"
+                                app:startAngle="270"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/top"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:text="500"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="32dp"
+                        android:textColor="@color/colorBlueDARK"
+                        android:textSize="48sp"
+                        android:layout_marginTop="80dp"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/cost"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="140dp"
+                        android:text="SR"
+                        android:textColor="@color/colorBlueDARK"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="16dp"
+                android:background="@color/colorBar7"
+                android:layout_margin="24dp"
+                android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/colorBar7"
+
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/top2"
+                        android:background="@color/colorBlueDARK"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:text="Consuming Percentage"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="16dp"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/progress"
+                        app:layout_constraintTop_toBottomOf="@id/cost2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="32dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        >
+                        <com.daimajia.numberprogressbar.NumberProgressBar
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            app:progress_unreached_color="#CCCCCC"
+                            app:progress_reached_color="#3498DB"
+
+                            app:progress_unreached_bar_height="4.75dp"
+                            app:progress_reached_bar_height="5.5dp"
+
+                            app:progress_text_size="20sp"
+                            app:progress_text_color="#3498DB"
+                            app:progress_text_offset="1dp"
+                            app:progress_text_visibility="visible"
+
+                            app:progress_max="100"
+                            app:progress_current="80"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/cost2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/top2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:text="500"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:textColor="@color/colorBlueDARK"
+                        android:textSize="50sp"
+                        android:layout_marginTop="70dp"
+                        android:textAlignment="center"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</LinearLayout>
