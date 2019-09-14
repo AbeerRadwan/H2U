@@ -1,0 +1,25 @@
+
+        public decimal Get(int numberOfPersons,int IDNumber)
+        {
+           
+            var context =new  H2UEntities();
+            decimal cons = 263;
+            decimal cons2 = (decimal)0.001;
+            var constantnumber = cons * cons2;
+            var info = context.UserInfoes.Where(x => x.IDentification == IDNumber).SingleOrDefault();
+            decimal LevelFactor = info.PaimentLevel.Factor;
+
+            decimal calculation = numberOfPersons * LevelFactor * constantnumber * 30;
+           
+            return calculation;
+        }
+
+        public List<MonthlyCalculation> Get( int IDNumber)
+        {
+          
+            var context = new H2UEntities();
+            
+            var info = context.MonthlyCalculations.Where(x => x.IDNumber == IDNumber).ToList();
+          
+            return info;
+        }
